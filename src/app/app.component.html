@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a href="/" class="navbar-brand">
+    Desafio Chazki
+  </a>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+    <app-vehicle></app-vehicle>
+
+    </div>
+    <div class="col-md-6">
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+          </agm-map>
+    </div>
+    <div class="col-md-7 text-center">
+        <app-vehicle-list></app-vehicle-list>
+      </div>
+  </div>
+</div>
+ 

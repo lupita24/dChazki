@@ -1,0 +1,18 @@
+<div class="card">
+        <div class="card-body">
+          <h6 class="text-center">
+            List of Vehicles
+          </h6>
+          <table class="table table-sm table-hover">
+            <tbody>
+              <tr *ngFor="let vehicle of vehicleList">
+                <td>{{vehicle.latitud}}</td>
+                <td>{{vehicle.longitud}}</td>
+                <td>{{vehicle.requirement1}}</td>
+                <td>{{vehicle.requirement2}}</td>
+                <td>{{vehicle.requirement3}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
